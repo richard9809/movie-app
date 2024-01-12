@@ -65,7 +65,7 @@ form.addEventListener('submit', (e) => {
   const searchTerm = search.value 
 
   if (searchTerm && searchTerm !== '') {
-    console.log(SEARCH_API + searchTerm);
+    console.log(SEARCH_API + searchTerm + `"`);
     getMovies(SEARCH_API + searchTerm)
 
     search.value = ''
